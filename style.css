@@ -88,3 +88,14 @@ header nav{
     width: 32px;
     height: 12px;
 }
+
+.elementCards{
+    background-color: hotpink;
+    height: 441px;
+    display: block;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
