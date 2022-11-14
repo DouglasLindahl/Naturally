@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #0000ff;
+}
+
+header nav{
+    width: 100%;
+    height: 64px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+}
+.headerLogotype{
+    font-weight: bold;
+}
+
+.headerIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
