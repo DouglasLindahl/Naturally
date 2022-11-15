@@ -10,6 +10,7 @@ body {
 
 header{
     height: 64px;
+    position: absolute;
 }
 
 header nav{
@@ -46,10 +47,6 @@ header nav{
 .hero{
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: -2;
 }
 
@@ -89,13 +86,47 @@ header nav{
     height: 12px;
 }
 
-.elementCards{
+.elementCardsContainer{
     background-color: hotpink;
-    height: 441px;
-    display: block;
-    position: absolute;
-    top: 100vh;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardNavigation{
+    height: 100px;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.navigationLine{
+    height: 2px; 
+    width: 48px;
+    background-color: #D9D9D9;
+}
+
+.navLineSelected{
+    background-color: #131313;
+}
+
+.elementsCard{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
