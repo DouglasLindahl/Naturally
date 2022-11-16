@@ -7,7 +7,7 @@ const elementCardNavigation = document.querySelector(".cardNavigation")
 
 let currentElementCard = 0;
 
-console.log(elementCardNavigation.children.length);
+
 const changeElementsSlide = () => {
 
     elementCardsLeftArrow.addEventListener("click", () => {
@@ -27,5 +27,6 @@ const changeElementsSlide = () => {
         }
     })
 }
+
 
 changeElementsSlide();
