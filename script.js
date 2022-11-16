@@ -9,20 +9,23 @@ let currentElementCard = 0;
 
 console.log(elementCardNavigation.children.length);
 const changeElementsSlide = () => {
-    console.log(currentElementCard);
-    if(currentElementCard >= 0 && currentElementCard < elementCardNavigation.children.length - 1)
-    {
-        elementCardsRightArrow.addEventListener("click", () => {
-            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard ++;
-            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        })
-        elementCardsLeftArrow.addEventListener("click", () => {
+
+    elementCardsLeftArrow.addEventListener("click", () => {
+        if(currentElementCard > 0)
+        {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
             currentElementCard --;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        })
-    }
+        }
+    })
+    elementCardsRightArrow.addEventListener("click", () => {
+        if(currentElementCard < elementCardNavigation.children.length -1)
+        {
+            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+            currentElementCard ++;
+            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+        }
+    })
 }
 
 changeElementsSlide();
