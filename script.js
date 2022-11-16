@@ -7,6 +7,24 @@ const elementCardNavigation = document.querySelector(".cardNavigation")
 
 let currentElementCard = 0;
 
+const hideArrows = () => {
+    if(currentElementCard == 0)
+    {
+        elementCardsLeftArrow.classList.add("invisible");
+    }
+    else
+    {
+        elementCardsLeftArrow.classList.remove("invisible");
+    }
+    if(currentElementCard == elementCardNavigation.children.length - 1)
+    {
+        elementCardsRightArrow.classList.add("invisible");
+    }
+    else
+    {
+        elementCardsRightArrow.classList.remove("invisible");
+    }
+}
 
 const changeElementsSlide = () => {
 
@@ -16,6 +34,7 @@ const changeElementsSlide = () => {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
             currentElementCard --;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+            hideArrows();
         }
     })
     elementCardsRightArrow.addEventListener("click", () => {
@@ -24,6 +43,7 @@ const changeElementsSlide = () => {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
             currentElementCard ++;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+            hideArrows();
         }
     })
 }
