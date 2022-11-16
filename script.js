@@ -6,6 +6,14 @@ const elementCardNavigation = document.querySelector(".cardNavigation")
 
 
 let currentElementCard = 0;
+const howManyCards = 4;
+
+for(let i = 0; i <= howManyCards; i++)
+{
+    let cardNavi = document.createElement("div");
+    cardNavi.classList.add("navigationLine");
+    elementCardNavigation.append(cardNavi);
+}
 
 const hideArrows = () => {
     if(currentElementCard == 0)
