@@ -5,13 +5,18 @@ const elementCardsLeftArrow = document.querySelector(".leftArrow");
 const elementCardNavigation = document.querySelector(".cardNavigation")
 const elementCardsContainer = document.querySelector(".elementCardsContainer");
 const elementCardsScrollContainer = document.querySelector(".scrollContainer");
+const elementCardsScrollContainerTwo = document.getElementById("test");
 
 
 let currentElementCard = 0;
 const howManyCards = 4;
 
+const cards = [
+    {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
+    {header: "CONTROL aa THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."}
+]
 const card = {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."};
-
+/*
 for (let i = 0; i < 4; i++) {
     let elementCard = document.createElement("article");
     elementCard.classList.add("elementCard")
@@ -20,15 +25,15 @@ for (let i = 0; i < 4; i++) {
     let cardImg = document.createElement("img");
 
     let cardText = document.createElement("div");
-    elementCard.classList.add("elementText")
+   cardText.classList.add("elementText")
 
     let cardInfoHeader = document.createElement("h4");
     let cardInfoText = document.createElement("p");
 
-    cardHeader.textContent = card.header;
-    cardImg.src = card.img;
-    cardInfoHeader.textContent = card.infoHeader;
-    cardInfoText.textContent = card.info;
+    cardHeader.textContent = cards[1].header;
+    cardImg.src = cards[0].img;
+    cardInfoHeader.textContent = cards[0].infoHeader;
+    cardInfoText.textContent = cards[0].info;
 
     cardText.append(cardInfoHeader);
     cardText.append(cardInfoText);
@@ -37,7 +42,7 @@ for (let i = 0; i < 4; i++) {
     elementCard.append(cardText);
 
     elementCardsScrollContainer.append(elementCard);
-}
+}*/
 
 for(let i = 0; i <= howManyCards; i++)
 {
@@ -49,7 +54,7 @@ for(let i = 0; i <= howManyCards; i++)
 const hideArrows = () => {
     if(currentElementCard == 0)
     {
-        elementCardsLeftArrow.classList.add("invisible");
+        //elementCardsLeftArrow.classList.add("invisible");
     }
     else
     {
@@ -71,6 +76,8 @@ const changeElementsSlide = () => {
         if(currentElementCard > 0)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+            let howMuchToMove = 100 * currentElementCard;
+            elementCardsScrollContainerTwo.style.marginLeft = howMuchToMove + "vw";
             currentElementCard --;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
             hideArrows();
@@ -80,6 +87,8 @@ const changeElementsSlide = () => {
         if(currentElementCard < elementCardNavigation.children.length -1)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+            let howMuchToMove = 100 * currentElementCard;
+            elementCardsScrollContainerTwo.style.marginLeft = howMuchToMove + "vw";
             currentElementCard ++;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
             hideArrows();
