@@ -134,11 +134,15 @@ header nav {
     bottom: 48px;
 }
 
-/* element cards */
-
 .arrow{
     cursor: pointer;
 }
+
+.invisible {
+    opacity: 0;
+}
+
+/* element cards */
 
 .elementCardsContainer{
     background-color: hotpink;
