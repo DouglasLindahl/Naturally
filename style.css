@@ -209,6 +209,7 @@ header nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .quoteArticle :nth-child(2) {
