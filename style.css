@@ -185,3 +185,10 @@ header nav {
     gap: 56px;
     align-items: center;
 }
+
+.heroJumpSection{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+}
