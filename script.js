@@ -2,6 +2,7 @@
 const body = document.querySelector("body");
 const elementCardsRightArrow = document.querySelector(".rightArrow");
 const elementCardsLeftArrow = document.querySelector(".leftArrow");
+const heroScrollDownArrow = document.querySelector(".scrollArrow");
 const elementCardNavigation = document.querySelector(".cardNavigation")
 const elementCardsContainer = document.querySelector(".elementCardsContainer");
 const elementCardsScrollContainer = document.querySelector(".scrollContainer");
@@ -69,9 +70,15 @@ const hideArrows = () => {
     }
 }
 
+heroScrollDown = () => {
+    heroScrollDownArrow.addEventListener("click", () => {
+        scroll(0, elementCardsContainer.getBoundingClientRect().y);
+    })
+}
+
 cardMove = () => {
-    let howMuchToMove = 200 * (currentElementCard);
-    elementCardsScrollContainerTwo.style.marginRight = howMuchToMove + "vw";
+    let howMuchToMove = 100 * (-currentElementCard);
+    elementCardsScrollContainerTwo.style.marginLeft = howMuchToMove + "vw";
 }
 const changeElementsSlide = () => {
 
@@ -99,3 +106,4 @@ const changeElementsSlide = () => {
 
 
 changeElementsSlide();
+heroScrollDown();
