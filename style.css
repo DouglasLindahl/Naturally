@@ -172,6 +172,7 @@ header nav {
     justify-content: flex-start;
     align-items: center;
     transition: 2s;
+    overflow-x: hidden;
 }
 
 .elementScroll{
