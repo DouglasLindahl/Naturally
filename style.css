@@ -3,7 +3,6 @@
 header {
     height: 109px;
     width: 100%;
-    padding-bottom: 8px;
     position: absolute;
 }
 
@@ -32,7 +31,7 @@ header nav {
 
 .navIcons {
     display: flex;
-    gap: 10px;
+    gap: 16px;
 }
 
 .magnifyingGlass {
@@ -41,8 +40,8 @@ header nav {
 }
 
 .bag {
-    height: 20px;
-    width: 20px;
+    width: 16.37px;
+    height: 16.39px;
 }
 
 .hamburgerMenu {
