@@ -7,6 +7,15 @@ header {
     position: absolute;
 }
 
+.signUpBox {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-green);
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
