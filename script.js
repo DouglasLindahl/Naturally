@@ -56,24 +56,7 @@ for(let i = 0; i < howManyCards; i++)
     elementCardNavigation.append(cardNavi);
 }
 
-const hideArrows = () => {
-    if(currentElementCard == 0)
-    {
-        //elementCardsLeftArrow.classList.add("invisible");
-    }
-    else
-    {
-        elementCardsLeftArrow.classList.remove("invisible");
-    }
-    if(currentElementCard == elementCardNavigation.children.length - 1)
-    {
-        elementCardsRightArrow.classList.add("invisible");
-    }
-    else
-    {
-        elementCardsRightArrow.classList.remove("invisible");
-    }
-}
+
 
 heroScrollDown = () => {
     heroScrollDownArrow.addEventListener("click", () => {
@@ -92,20 +75,30 @@ const changeElementsSlide = () => {
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
             currentElementCard --;
-            cardMove();
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-            hideArrows();
         }
+        else if(currentElementCard <= 0)
+        {
+            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+            currentElementCard = cards.length;
+            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+        }
+        cardMove();
     })
     elementCardsRightArrow.addEventListener("click", () => {
-        if(currentElementCard < elementCardNavigation.children.length -1)
+        if(currentElementCard < elementCardNavigation.children.length - 1)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
             currentElementCard ++;
-            cardMove();
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-            hideArrows();
         }
+        else if(currentElementCard >= elementCardNavigation.children.length - 1)
+        {
+            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+            currentElementCard = 0;
+            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+        }
+        cardMove();
     })
 }
 
