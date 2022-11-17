@@ -202,6 +202,9 @@ header nav {
 
 .quoteSection {
     color: var(--color-coal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quoteArticle {
@@ -210,6 +213,7 @@ header nav {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    width: 390px;
 }
 
 .quoteArticle :nth-child(2) {
