@@ -134,7 +134,7 @@ header nav {
 }
 
 .elementText {
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ header nav {
 .elementCardsSection{
     background-color: hotpink;
     height: 441px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     gap: 40px;
@@ -155,17 +155,17 @@ header nav {
 
 .scrollContainer {
     height: 100%;
-    width: 400%;
+    width: 400vw;
     background-color: blue;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     transition: 2s;
 }
 
 .elementCard{
-    flex-basis: 100%;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;

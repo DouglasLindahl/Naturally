@@ -43,8 +43,7 @@ for (let i = 0; i < 4; i++) {
 
     elementCardsScrollContainer.append(elementCard);
 }*/
-
-for(let i = 0; i <= howManyCards; i++)
+for(let i = 0; i < howManyCards; i++)
 {
     let cardNavi = document.createElement("div");
     cardNavi.classList.add("navigationLine");
@@ -70,15 +69,18 @@ const hideArrows = () => {
     }
 }
 
+cardMove = () => {
+    let howMuchToMove = 200 * (currentElementCard);
+    elementCardsScrollContainerTwo.style.marginRight = howMuchToMove + "vw";
+}
 const changeElementsSlide = () => {
 
     elementCardsLeftArrow.addEventListener("click", () => {
         if(currentElementCard > 0)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            let howMuchToMove = 100 * currentElementCard;
-            elementCardsScrollContainerTwo.style.marginLeft = howMuchToMove + "vw";
             currentElementCard --;
+            cardMove();
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
             hideArrows();
         }
@@ -87,9 +89,8 @@ const changeElementsSlide = () => {
         if(currentElementCard < elementCardNavigation.children.length -1)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            let howMuchToMove = 100 * currentElementCard;
-            elementCardsScrollContainerTwo.style.marginLeft = howMuchToMove + "vw";
             currentElementCard ++;
+            cardMove();
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
             hideArrows();
         }
