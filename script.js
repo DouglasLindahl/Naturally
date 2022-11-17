@@ -20,10 +20,10 @@ const howManyCards = 4;
 
 //element cards infomation
 const cards = [
-    {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
-    {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
-    {header: "DIRT NEGLECTING", img:"images/triangle.png", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
-    {header: "FIRE RESISTANT", img:"images/triangle.png", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
+    {header: "CONTROL THE ELEMENTS", img:"images/element1.svg", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
+    {header: "CONTROL THE ELEMENTS", img:"images/element2.svg", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
+    {header: "DIRT NEGLECTING", img:"images/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
+    {header: "FIRE RESISTANT", img:"images/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
 ]
 
 //creating element cards for each of the cards information
