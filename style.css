@@ -197,3 +197,15 @@ header nav {
     position: absolute;
     top: 100vh;
 }
+
+/* quote section */
+
+.quoteSection {
+    color: var(--color-coal);
+}
+
+.quoteArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
