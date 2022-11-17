@@ -14,17 +14,42 @@ const elementScroll = document.querySelector("elementScroll");
 const heroJumpSection = document.getElementById("heroJumpSection");
 
 
+whichLanguage = "se";
 
 let currentElementCard = 0;
 const howManyCards = 4;
 
 //element cards infomation
-const cards = [
+let cards = [
     {header: "CONTROL THE ELEMENTS", img:"images/element1.svg", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
     {header: "CONTROL THE ELEMENTS", img:"images/element2.svg", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
-    {header: "DIRT NEGLECTING", img:"images/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
-    {header: "FIRE RESISTANT", img:"images/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
+    {header: "CONTROL THE ELEMENTS", img:"images/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
+    {header: "CONTROL THE ELEMENTS", img:"images/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
 ]
+
+const enCards = [
+    {header: "CONTROL THE ELEMENTS", img:"images/element1.svg", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
+    {header: "CONTROL THE ELEMENTS", img:"images/element2.svg", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
+    {header: "CONTROL THE ELEMENTS", img:"images/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
+    {header: "CONTROL THE ELEMENTS", img:"images/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
+]
+
+const seCards = [
+    {header: "KONTROLLERA ELEMENTEN", img:"images/element1.svg", infoHeader: "ALLTID VATTENTÄT", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/element2.svg", infoHeader: "PERFEKT VINDTÄT", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/element3.svg", infoHeader: "SMUTSFÖRSUMMAR", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/element4.svg", infoHeader: "BRANDSÄTLIG", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
+]
+
+if(whichLanguage == "en")
+{
+    cards = enCards;
+}
+if(whichLanguage == "se")
+{
+    cards = seCards;
+}
+
 
 //creating element cards for each of the cards information
 for (let i = 0; i < cards.length; i++) {
