@@ -25,10 +25,9 @@ header nav {
     padding-top: 48px;
 }
 
-.logoText {
-    font-family: "AvenirBold";
-    font-size: 20px;
-    letter-spacing: 2px;
+.logo {
+    height: 30px;
+    width: 34px;
 }
 
 .navIcons {
