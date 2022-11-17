@@ -208,4 +208,13 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.quoteArticle :nth-child(2) {
+    align-self: flex-start;
+}
+
+.quoteArticle :nth-child(4) {
+    align-self: flex-end;
 }
