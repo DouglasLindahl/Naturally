@@ -7,6 +7,8 @@ const elementCardNavigation = document.querySelector(".cardNavigation")
 const elementCardsContainer = document.querySelector(".elementCardsContainer");
 const elementCardsScrollContainer = document.querySelector(".scrollContainer");
 const elementCardsScrollContainerTwo = document.getElementById("test");
+const heroJumpSection = document.getElementById("heroJumpSection");
+const elementScroll = document.querySelector("elementScroll");
 
 
 let currentElementCard = 0;
@@ -14,11 +16,13 @@ const howManyCards = 4;
 
 const cards = [
     {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
-    {header: "CONTROL aa THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."}
+    {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
+    {header: "DIRT NEGLECTING", img:"images/triangle.png", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
+    {header: "FIRE RESISTANT", img:"images/triangle.png", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
 ]
 const card = {header: "CONTROL THE ELEMENTS", img:"images/triangle.png", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."};
-/*
-for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < cards.length; i++) {
     let elementCard = document.createElement("article");
     elementCard.classList.add("elementCard")
 
@@ -31,10 +35,10 @@ for (let i = 0; i < 4; i++) {
     let cardInfoHeader = document.createElement("h4");
     let cardInfoText = document.createElement("p");
 
-    cardHeader.textContent = cards[1].header;
-    cardImg.src = cards[0].img;
-    cardInfoHeader.textContent = cards[0].infoHeader;
-    cardInfoText.textContent = cards[0].info;
+    cardHeader.textContent = cards[i].header;
+    cardImg.src = cards[i].img;
+    cardInfoHeader.textContent = cards[i].infoHeader;
+    cardInfoText.textContent = cards[i].info;
 
     cardText.append(cardInfoHeader);
     cardText.append(cardInfoText);
@@ -42,8 +46,9 @@ for (let i = 0; i < 4; i++) {
     elementCard.append(cardImg);
     elementCard.append(cardText);
 
-    elementCardsScrollContainer.append(elementCard);
-}*/
+    elementCardsScrollContainerTwo.append(elementCard);
+}
+elementCardsScrollContainer.append(elementScroll);
 for(let i = 0; i < howManyCards; i++)
 {
     let cardNavi = document.createElement("div");
@@ -72,7 +77,7 @@ const hideArrows = () => {
 
 heroScrollDown = () => {
     heroScrollDownArrow.addEventListener("click", () => {
-        scroll(0, elementCardsContainer.getBoundingClientRect().y);
+        heroJumpSection.scrollIntoView();
     })
 }
 
