@@ -54,6 +54,7 @@ for(let i = 0; i < howManyCards; i++)
     let cardNavi = document.createElement("div");
     cardNavi.classList.add("navigationLine");
     elementCardNavigation.append(cardNavi);
+    elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
 }
 
 
@@ -80,7 +81,7 @@ const changeElementsSlide = () => {
         else if(currentElementCard <= 0)
         {
             elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard = cards.length;
+            currentElementCard = cards.length - 1;
             elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
         }
         cardMove();
