@@ -238,8 +238,7 @@ header nav {
     display: flex;
     justify-content: center;
     gap: 16px;
-    height: 84px;
-    width: 257px;
+    letter-spacing: 2px;
 }
 
 .quotePersonInfo img {
