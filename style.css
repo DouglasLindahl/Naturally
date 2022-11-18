@@ -241,6 +241,11 @@ header nav {
     width: 257px;
 }
 
+.quotePersonInfo img {
+    height: 84px;
+    width: 84px;
+}
+
 .quotePersonInfoText {
     display: flex;
     flex-direction: column;
