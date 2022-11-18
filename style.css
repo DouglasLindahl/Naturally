@@ -236,6 +236,7 @@ header nav {
 
 .quotePersonInfo {
     display: flex;
+    justify-content: center;
     gap: 16px;
     height: 84px;
     width: 257px;
