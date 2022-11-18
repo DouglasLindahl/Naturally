@@ -19,6 +19,7 @@ header {
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     padding-left: 20px;
     padding-right: 20px;
@@ -32,6 +33,13 @@ header nav {
 .navIcons {
     display: flex;
     gap: 16px;
+}
+
+.languageSelection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .magnifyingGlass {
