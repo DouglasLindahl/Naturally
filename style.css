@@ -302,3 +302,11 @@ header nav {
     font-family: "AvenirBold";
     letter-spacing: 2px;
 }
+
+/* footer */
+
+footer {
+    height: 877px;
+    width: 100%;
+    background-color: var(--color-coal);
+}
