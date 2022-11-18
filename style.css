@@ -279,6 +279,10 @@ header nav {
     gap: 20px;
 }
 
+.joinUsText :nth-child(1) {
+    font-size: 24px;
+}
+
 .joinUsText :nth-child(2) {
     text-align: center;
 }
@@ -291,5 +295,5 @@ header nav {
     border: 2px solid var(--color-snow);
     font-size: 20px;
     font-family: "AvenirBold";
-    letter-spacing: 0.01em;
+    letter-spacing: 2px;
 }
