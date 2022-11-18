@@ -16,15 +16,16 @@
 @font-face {
     font-family: "AvenirRegular";
     src: url(fonts/AvenirLTStd-Book.ttf);
-    font-weight: 400;
-    font-style: normal;
+}
+
+@font-face {
+    font-family: "AvenirMedium";
+    src: url(fonts/AvenirLTSd-Medium.ttf);
 }
 
 @font-face {
     font-family: "AvenirBold";
     src: url(fonts/AvenirLTStd-Black.ttf);
-    font-weight: 800;
-    font-style: normal;
 }
 
 body {
