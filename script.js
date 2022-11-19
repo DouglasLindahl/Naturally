@@ -150,18 +150,23 @@ const changeElementsSlideClick = () => {
     })
 }
 
+
 automaticSlide = () => {
-    if(automaticElementCardSlide == true)
+    if(window.scrollY > 0)
     {
-        changeElementsSlideRight();
+        if(automaticElementCardSlide == true)
+        {
+            changeElementsSlideRight();
+        }
+        else
+        {
+            setTimeout(() => {
+                automaticElementCardSlide = true;
+                console.log(automaticElementCardSlide);
+            }, 10000);
+        }
     }
-    else
-    {
-        setTimeout(() => {
-            automaticElementCardSlide = true;
-            console.log(automaticElementCardSlide);
-        }, 15000);
-    }
+
 }
 
 
