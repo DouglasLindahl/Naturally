@@ -16,6 +16,7 @@ const heroJumpSection = document.getElementById("heroJumpSection");
 
 
 let currentElementCard = 0;
+let automaticElementCardSlide = true;
 const howManyCards = 4;
 
 //element cards infomation
@@ -63,6 +64,7 @@ for (let i = 0; i < cards.length; i++) {
 
     //places the card under the scroll card section
     elementCardsScroll.append(elementCard);
+
 }
 //places the card under the main card section
 elementCardsScrollContainer.append(elementScroll);
@@ -92,54 +94,81 @@ cardMove = () => {
 }
 
 
-//calculating which slide you will view after clicking arrow to the next slide
-const changeElementsSlide = () => {
+changeElementsSlideLeft = () => 
+{
+    if(currentElementCard > 0)
+    {
+        //removes the old navigation line
+        elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+        currentElementCard --;
+        //adds a new navigation line
+        elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+    }
+    else if(currentElementCard <= 0)
+    {
+        //removes the old navigation line
+        elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+        currentElementCard = cards.length - 1;
+        //adds a new navigation line
+        elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+    }
+    //moves the card after calculating where to move it
+    cardMove();
+}
 
+changeElementsSlideRight = () => {
+    if(currentElementCard < elementCardNavigation.children.length - 1)
+    {
+        //removes the old navigation line
+        elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+        currentElementCard ++;
+        //adds a new navigation line
+        elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+    }
+    else if(currentElementCard >= elementCardNavigation.children.length - 1)
+    {
+        //removes the old navigation line
+        elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
+        currentElementCard = 0;
+        //adds a new navigation line
+        elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
+    }
+    //moves the card after calculating where to move it
+    cardMove();
+}
+
+
+//calculating which slide you will view after clicking arrow to the next slide
+const changeElementsSlideClick = () => {
     elementCardsLeftArrow.addEventListener("click", () => {
-        if(currentElementCard > 0)
-        {
-            //removes the old navigation line
-            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard --;
-            //adds a new navigation line
-            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        }
-        else if(currentElementCard <= 0)
-        {
-            //removes the old navigation line
-            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard = cards.length - 1;
-            //adds a new navigation line
-            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        }
-        //moves the card after calculating where to move it
-        cardMove();
+        changeElementsSlideLeft();
+        automaticElementCardSlide = false;
     })
-    
-    
     elementCardsRightArrow.addEventListener("click", () => {
-        if(currentElementCard < elementCardNavigation.children.length - 1)
-        {
-            //removes the old navigation line
-            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard ++;
-            //adds a new navigation line
-            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        }
-        else if(currentElementCard >= elementCardNavigation.children.length - 1)
-        {
-            //removes the old navigation line
-            elementCardNavigation.children[currentElementCard].classList.remove("navLineSelected");
-            currentElementCard = 0;
-            //adds a new navigation line
-            elementCardNavigation.children[currentElementCard].classList.add("navLineSelected");
-        }
-        //moves the card after calculating where to move it
-        cardMove();
+        changeElementsSlideRight();
+        automaticElementCardSlide = false;
     })
 }
 
+automaticSlide = () => {
+    if(automaticElementCardSlide == true)
+    {
+        changeElementsSlideRight();
+    }
+    else
+    {
+        setTimeout(() => {
+            automaticElementCardSlide = true;
+            console.log(automaticElementCardSlide);
+        }, 15000);
+    }
+}
+
+
+
+window.setInterval(automaticSlide, 5000);
+
 //always checking if the change slide buttons are being pressed 
-changeElementsSlide();
+changeElementsSlideClick();
 //always checking if the user is clicking on the arrow to jump down from the hero
 heroScrollDown();
