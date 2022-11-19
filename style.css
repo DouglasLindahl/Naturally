@@ -61,7 +61,7 @@ header nav {
 
 .heroSection {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,12 +137,6 @@ header nav {
 }
 
 
-.scrolltest {
-    height: 100vh;
-    width: 100%;
-    background-color: aqua;
-}
-
 .arrowContainer {
     position: absolute;
     display: flex;
@@ -164,9 +158,10 @@ header nav {
 
 .elementCardsSection{
     height: 441px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
+    overflow-x: hidden;
     gap: 40px;
     flex-direction: column;
     align-items: center;
@@ -201,8 +196,10 @@ header nav {
 
 .heroJumpSection{
     height: 100vh;
-    width: 100%;
+    overflow-x: hidden;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 100vh;
 }
 
