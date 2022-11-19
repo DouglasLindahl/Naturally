@@ -109,6 +109,7 @@ header nav {
 
 .arrow{
     cursor: pointer;
+    z-index: 5;
 }
 
 .invisible {
@@ -165,6 +166,14 @@ header nav {
     gap: 40px;
     flex-direction: column;
     align-items: center;
+}
+
+.elementSwipeCheck{
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    z-index: 3;
 }
 
 .scrollContainer {

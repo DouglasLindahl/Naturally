@@ -10,10 +10,14 @@ const elementCardNavigation = document.querySelector(".cardNavigation")
 const elementCardsScrollContainer = document.querySelector(".scrollContainer");
 const elementCardsScroll = document.getElementById("test");
 const elementScroll = document.querySelector("elementScroll");
+const elementSwipeCheck = document.getElementById("elementSwipeCheck");
 
 const heroJumpSection = document.getElementById("heroJumpSection");
 
 
+let touchStart = 0;
+let touchEnd = 0;
+const swipeLength = 50;
 
 let currentElementCard = 0;
 let automaticElementCardSlide = true;
@@ -83,6 +87,7 @@ for(let i = 0; i < howManyCards; i++)
 //allows the user to scroll down to the section after the hero by clicking the arrow on the hero
 heroScrollDown = () => {
     heroScrollDownArrow.addEventListener("click", () => {
+        console.log("clicked");
         heroJumpSection.scrollIntoView();
     })
 }
@@ -150,6 +155,18 @@ const changeElementsSlideClick = () => {
     })
 }
 
+const elementSlideSwipeCheck = () => {
+    elementSwipeCheck.addEventListener("touchstart", (e) => {
+        touchStart = e.changedTouches[0].screenX;
+    })
+    elementSwipeCheck.addEventListener("touchend", (e) => {
+        touchEnd = e.changedTouches[0].screenX;
+        if(touchStart > touchEnd && (Math.abs(touchStart-touchEnd) > swipeLength)) changeElementsSlideRight();
+        if(touchStart < touchEnd && (Math.abs(touchStart - touchEnd) > swipeLength)) changeElementsSlideLeft();
+
+        automaticElementCardSlide = false;
+    })
+}
 
 automaticSlide = () => {
     if(window.scrollY > 0)
@@ -172,6 +189,8 @@ automaticSlide = () => {
 
 
 window.setInterval(automaticSlide, 5000);
+
+elementSlideSwipeCheck();
 
 //always checking if the change slide buttons are being pressed 
 changeElementsSlideClick();
