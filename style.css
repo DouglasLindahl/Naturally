@@ -215,12 +215,15 @@ header nav {
 /* showcase section */
 
 .showcaseSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 700px;
     width: 100%;
+}
+
+.showcaseArticle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 160px;
 }
 
 .showcaseJacket {
@@ -232,6 +235,13 @@ header nav {
     color: var(--color-coal);
     text-align: center;
     width: 286px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.showcaseHeader {
+    font-size: 24px;
 }
 
 .showcaseText span {
