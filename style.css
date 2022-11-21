@@ -212,6 +212,19 @@ header nav {
     top: 100vh;
 }
 
+/* showcase section */
+
+.showcaseSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcaseJacket {
+    height: 344px;
+    width: 309.5px;
+}
+
 /* quote section */
 
 .quoteSection {
