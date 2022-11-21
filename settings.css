@@ -34,6 +34,7 @@ body {
     height: 100%;
     color: var(--color-snow);
     font-family: "AvenirRegular";
+    letter-spacing: 0.01em;
 }
 
 h1 {
