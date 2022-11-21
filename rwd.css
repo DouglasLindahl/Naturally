@@ -2,5 +2,24 @@
     /* showcase section */
     .showcaseSection {
         height: 668px;
+        padding: 60px 48px 48px 60px;
+    }
+    .showcaseArticle {
+        flex-direction: row;
+        align-items: center;
+    }
+    .showcaseText {
+        align-self: flex-end;
+        order: -1;
+        text-align:start;
+        width: 436px;
+        gap: 40px;
+    }
+    .showcaseHeader {
+        font-size: 36px;
+    }
+    .showcaseArticle img {
+        height: 548px;
+        width: 500px;
     }
 }
