@@ -1,4 +1,5 @@
 @media screen and (min-width: 710px) {
+
     /* showcase section */
     .showcaseSection {
         height: 668px;
@@ -22,4 +23,19 @@
         height: 548px;
         width: 500px;
     }
+
+    /* join us section */
+    .joinUsSection {
+        height: 468px;
+    }
+
+    .joinUsArticle {
+        width: 527px;
+        align-items: flex-start;
+    }
+
+    .joinUsText {
+        align-items: flex-start;
+    }
+    
 }
