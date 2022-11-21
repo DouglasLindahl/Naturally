@@ -218,11 +218,24 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
 }
 
 .showcaseJacket {
     height: 344px;
     width: 309.5px;
+}
+
+.showcaseText {
+    color: var(--color-coal);
+    text-align: center;
+    width: 286px;
+}
+
+.showcaseText span {
+    font-family: "AvenirBold";
 }
 
 /* quote section */
