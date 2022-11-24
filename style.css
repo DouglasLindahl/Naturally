@@ -273,6 +273,12 @@ header nav {
     width: 350px;
 }
 
+.collectionText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .collectionImage {
     width: 100%;
     height: 350px;
