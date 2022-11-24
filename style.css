@@ -263,6 +263,12 @@ header nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+}
+
+.collectionCards {
+    display: flex;
+    flex-direction: column;
 }
 
 .collectionCard {

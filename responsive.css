@@ -47,4 +47,25 @@
         height: 624px;
     }
     
+    /* collection section */
+    .collectionSection {
+        height: 842px;
+    }
+
+    .collectionCards {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .collectionHeader {
+        font-size: 64px;
+    }
+
+    .collectionText :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .collectionText :nth-child(3) {
+        font-size: 24px;
+    }
 }
