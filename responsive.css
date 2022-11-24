@@ -28,6 +28,15 @@
         width: 500px;
     }
 
+    /* material section */
+    .materialSection {
+        height: 596px;
+    }
+    
+    .materialsContainer {
+        flex-direction: row;
+    }
+
     /* quote section */
     .quoteSection {
         height: 624px;

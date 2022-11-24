@@ -252,6 +252,27 @@ header nav {
 
 /* material section */
 
+.materialSection {
+    height: 1315px;
+    width: 100%;
+    padding: 60px 20px 60px 20px;
+    gap: 40px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.materialsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+}
+
+.materialsContainer img {
+    height: 180px;
+    width: 224.82px;
+}
 /* collection section */
 
 .collectionSection {
