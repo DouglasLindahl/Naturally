@@ -1,5 +1,9 @@
 @media screen and (min-width: 1024px) {
 
+    body {
+        font-size: 24px;
+    }
+
     /* showcase section */
     .showcaseSection {
         height: 668px;
@@ -24,32 +28,21 @@
         width: 500px;
     }
 
-    /* join us section */
-    .joinUsSection {
-        height: 468px;
-    }
-
-    .joinUsArticle {
-        width: 527px;
-        align-items: flex-start;
-    }
-
-    .joinUsText {
-        align-items: flex-start;
-    }
-
-    .joinUsText :nth-child(2) {
-        text-align: start;
-    }
-
     /* quote section */
     .quoteSection {
         height: 624px;
+    }
+
+    .quoteArticle {
+        font-size: 24px;
+        width: 527.88px;
     }
     
     /* collection section */
     .collectionSection {
         height: 842px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .collectionCards {
@@ -61,11 +54,30 @@
         font-size: 64px;
     }
 
-    .collectionText :nth-child(1) {
-        font-size: 24px;
+    /* join us section */
+    .joinUsSection {
+        height: 468px;
     }
 
-    .collectionText :nth-child(3) {
-        font-size: 24px;
+    .joinUsArticle {
+        width: 527px;
+        align-items: flex-start;
     }
+
+    .joinUsHeadline {
+        font-family: "AvenirBold";
+    }
+
+    .joinUsText {
+        align-items: flex-start;
+    }
+
+    .joinUsText :nth-child(1) {
+        font-size: 36px;
+    }
+
+    .joinUsText :nth-child(2) {
+        text-align: start;
+    }
+
 }

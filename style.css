@@ -264,6 +264,8 @@ header nav {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .collectionCards {
@@ -290,6 +292,15 @@ header nav {
     height: 350px;
 }
 
+.itemDescription {
+    font-size: 16px;
+    color: var(--color-green-light);
+}
+
+.itemPrice {
+    font-size: 16px;
+}
+
 .collectionSection p {
     text-align: center;
 }
@@ -306,6 +317,10 @@ header nav {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.collectionSection button {
+    width: 350px;
 }
 /* quote section */
 
@@ -385,7 +400,7 @@ header nav {
     gap: 20px;
 }
 
-.joinUsText :nth-child(1) {
+.joinUsHeadline {
     font-size: 24px;
 }
 
