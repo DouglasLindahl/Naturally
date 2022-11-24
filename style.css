@@ -137,7 +137,6 @@ header nav {
     background-color: #131313;
 }
 
-
 .arrowContainer {
     position: absolute;
     display: flex;
@@ -323,6 +322,7 @@ header nav {
 .collectionSection button {
     width: 350px;
 }
+
 /* quote section */
 
 .quoteSection {
