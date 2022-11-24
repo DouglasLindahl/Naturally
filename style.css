@@ -251,6 +251,48 @@ header nav {
     font-family: "AvenirBold";
 }
 
+/* material section */
+
+/* collection section */
+
+.collectionSection {
+    height: 1,536px;
+    width: 100%;
+    background-color: var(--color-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collectionImage {
+}
+
+.collectionSection p {
+    text-align: center;
+}
+
+.collectionHeader {
+    font-family: "AvenirBold";
+    font-size: 32px;
+    letter-spacing: 3.2px;
+}
+
+.collectionCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+}
+
+.collectionCardText {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* quote section */
 
 .quoteSection {
