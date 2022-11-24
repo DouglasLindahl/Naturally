@@ -1,4 +1,4 @@
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 1024px) {
 
     /* showcase section */
     .showcaseSection {
@@ -40,6 +40,11 @@
 
     .joinUsText :nth-child(2) {
         text-align: start;
+    }
+
+    /* quote section */
+    .quoteSection {
+        height: 624px;
     }
     
 }
