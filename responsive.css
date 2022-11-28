@@ -126,4 +126,9 @@
         flex-direction: column;
         align-items: center;
     }
+
+    /* quote section */
+    .quotePersonInfo {
+        align-self:flex-start;
+    }
 }
