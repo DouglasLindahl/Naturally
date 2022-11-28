@@ -148,16 +148,24 @@ header nav {
 }
 
 .elementText {
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .elementText h4 {
     margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+}
+.elementText p{
+    width: 80%;
+    text-align: center;
 }
 
 .elementCardsSection{
-    height: 441px;
+    height: 465px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -214,40 +222,14 @@ header nav {
 /* showcase section */
 
 .showcaseSection {
-    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 40px 40.25px 40.25px;
 }
 
-.showcaseArticle {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 160px;
-}
-
-.showcaseJacket {
-    height: 344px;
-    width: 309.5px;
-}
-
-.showcaseText {
-    color: var(--color-coal);
-    text-align: center;
-    width: 286px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.showcaseHeader {
-    font-size: 24px;
-}
-
-.showcaseText span {
-    font-family: "AvenirBold";
+.showcaseSection img{
+    width: 100vw;
+    height: auto;
 }
 
 /* material section */
