@@ -45,13 +45,11 @@ function myFunction(x) {
     if (x.matches) { 
         isMobile = false;
         elementCardsScroll.style.marginLeft = "0px";
-      document.body.style.backgroundColor = "yellow";
       elementCardNavigation.classList.add("hidden");
       arrowContainer.classList.add("hidden");
       
     } else {
         isMobile = true;
-        document.body.style.backgroundColor = "pink";
         elementCardNavigation.classList.remove("hidden");
         arrowContainer.classList.remove("hidden");
     }

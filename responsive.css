@@ -5,6 +5,13 @@
     }
 
     /* showcase section */
+
+    .heroImg{
+        content: url("images/desktopHero.png");
+    }
+    .languageSelection p {
+        font-size: 16px;
+    }
     .showcaseSection {
         height: 668px;
         padding: 60px 48px 48px 60px;
