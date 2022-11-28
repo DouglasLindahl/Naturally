@@ -7,7 +7,7 @@
     /* showcase section */
 
     .heroImg{
-        content: url("images/desktopHero.png");
+        content: url("images/hero/desktopHero.png");
     }
     .showcaseSection img{
         content: url("images/walking-desktop.gif");
