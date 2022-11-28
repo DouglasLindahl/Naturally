@@ -70,8 +70,12 @@
     /* join us section */
     .joinUsSection {
         height: 468px;
+        justify-content: space-between;
     }
-
+    .joinUsSection img{
+        display: block;
+        opacity: 30%;
+    }
     .joinUsArticle {
         width: 527px;
         align-items: flex-start;
