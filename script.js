@@ -9,7 +9,7 @@ const arrowContainer = document.querySelector(".arrowContainer");
 const elementCardsContainer = document.querySelector(".elementCardsContainer");
 const elementCardNavigation = document.querySelector(".cardNavigation")
 const elementCardsScrollContainer = document.querySelector(".scrollContainer");
-const elementCardsScroll = document.getElementById("test");
+const elementCardsScroll = document.getElementById("elementCardsScroll");
 const elementScroll = document.querySelector("elementScroll");
 const elementSwipeCheck = document.getElementById("elementSwipeCheck");
 
