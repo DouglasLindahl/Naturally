@@ -4,6 +4,7 @@ const body = document.querySelector("body");
 const elementCardsRightArrow = document.querySelector(".rightArrow");
 const elementCardsLeftArrow = document.querySelector(".leftArrow");
 const heroScrollDownArrow = document.querySelector(".scrollArrow");
+const arrowContainer = document.querySelector(".arrowContainer");
 
 const elementCardsContainer = document.querySelector(".elementCardsContainer");
 const elementCardNavigation = document.querySelector(".cardNavigation")
@@ -14,6 +15,8 @@ const elementSwipeCheck = document.getElementById("elementSwipeCheck");
 
 const heroJumpSection = document.getElementById("heroJumpSection");
 
+const windowWidth = window.matchMedia("(min-width: 1024px)")
+let isMobile;
 
 let touchStart = 0;
 let touchEnd = 0;
@@ -30,6 +33,39 @@ const cards = [
     {header: "CONTROL THE ELEMENTS", img:"images/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
     {header: "CONTROL THE ELEMENTS", img:"images/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
 ]
+
+
+
+
+
+
+
+
+function myFunction(x) {
+    if (x.matches) { 
+        isMobile = false;
+        elementCardsScroll.style.marginLeft = "0px";
+      document.body.style.backgroundColor = "yellow";
+      elementCardNavigation.classList.add("hidden");
+      arrowContainer.classList.add("hidden");
+      
+    } else {
+        isMobile = true;
+        document.body.style.backgroundColor = "pink";
+        elementCardNavigation.classList.remove("hidden");
+        arrowContainer.classList.remove("hidden");
+    }
+  }
+
+  myFunction(windowWidth);
+  windowWidth.addListener(myFunction);
+
+
+
+
+
+
+
 
 
 
@@ -71,7 +107,7 @@ for (let i = 0; i < cards.length; i++) {
 
 }
 //places the card under the main card section
-elementCardsScrollContainer.append(elementScroll);
+
 
 
 //creates the navigation lines to see which card you are viewing
@@ -169,18 +205,21 @@ const elementSlideSwipeCheck = () => {
 }
 
 automaticSlide = () => {
-    if(window.scrollY > 0)
+    if(isMobile)
     {
-        if(automaticElementCardSlide == true)
+        if(window.scrollY > 0)
         {
-            changeElementsSlideRight();
-        }
-        else
-        {
-            setTimeout(() => {
-                automaticElementCardSlide = true;
-                console.log(automaticElementCardSlide);
-            }, 10000);
+            if(automaticElementCardSlide == true)
+            {
+                changeElementsSlideRight();
+            }
+            else
+            {
+                setTimeout(() => {
+                    automaticElementCardSlide = true;
+                    console.log(automaticElementCardSlide);
+                }, 10000);
+            }
         }
     }
 

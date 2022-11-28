@@ -93,4 +93,34 @@
     .joinUsText :nth-child(2) {
         text-align: start;
     }
+    .elementCard{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 56px;
+        align-items: center;
+    }
+    .elementText p {
+        width: 80%;
+        font-size: 16px;
+    }
+    .elementCard h3{
+        display: none;
+    }
+    .elementCard h4
+    {
+        width: 100%;
+    }
+    .elementCard img{
+        width: 128px;
+        height: 111px;
+    }
+    .elementText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
