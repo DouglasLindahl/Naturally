@@ -4,16 +4,51 @@
         font-size: 24px;
     }
 
-    /* showcase section */
+    /* header */
+    .languageSelection p {
+        font-size: 16px;
+    }
 
+    /* hero section */
     .heroImg{
         content: url("images/hero/desktopHero.png");
     }
+
+    /* element cards section */
+    .elementCard{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 56px;
+        align-items: center;
+    }
+    .elementText p {
+        width: 80%;
+        font-size: 16px;
+    }
+    .elementCard h3{
+        display: none;
+    }
+    .elementCard h4
+    {
+        width: 100%;
+    }
+    .elementCard img{
+        width: 128px;
+        height: 111px;
+    }
+    .elementText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* showcase section */
     .showcaseSection img{
         content: url("images/walking-desktop.gif");
-    }
-    .languageSelection p {
-        font-size: 16px;
     }
     .showcaseArticle {
         flex-direction: row;
@@ -95,36 +130,6 @@
 
     .joinUsText :nth-child(2) {
         text-align: start;
-    }
-    .elementCard{
-        width: auto;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 56px;
-        align-items: center;
-    }
-    .elementText p {
-        width: 80%;
-        font-size: 16px;
-    }
-    .elementCard h3{
-        display: none;
-    }
-    .elementCard h4
-    {
-        width: 100%;
-    }
-    .elementCard img{
-        width: 128px;
-        height: 111px;
-    }
-    .elementText{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     /* quote section */
