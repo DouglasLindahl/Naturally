@@ -2,6 +2,7 @@
 footer{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .footerHeader{
@@ -84,4 +85,11 @@ footer{
 footer .footerButtons p:hover, .footerInformation p:hover{
     color: var(--color-green-light);
     cursor: pointer;
+}
+
+.footerLogo{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    opacity: 5%;
 }
