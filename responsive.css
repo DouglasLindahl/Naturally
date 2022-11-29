@@ -137,6 +137,7 @@
         align-self:flex-start;
     }
 
+<<<<<<< Updated upstream
     .cardNavigation{
         display: none;
     }
@@ -147,3 +148,19 @@
         margin-left: 0px;
     }
 }
+=======
+
+.cardNavigation{
+    display: none;
+}
+.arrowContainer{
+    display: none;
+}
+.elementScroll{
+    margin-left: 0px;
+}
+
+}
+
+
+>>>>>>> Stashed changes

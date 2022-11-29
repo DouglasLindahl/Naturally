@@ -45,13 +45,9 @@ function myFunction(x) {
     if (x.matches) { 
         isMobile = false;
         elementCardsScroll.style.marginLeft = "0px";
-      elementCardNavigation.classList.add("hidden");
-      arrowContainer.classList.add("hidden");
       
     } else {
         isMobile = true;
-        elementCardNavigation.classList.remove("hidden");
-        arrowContainer.classList.remove("hidden");
     }
   }
 
