@@ -391,6 +391,7 @@ header nav {
     height: 340px;
     background-color: var(--color-green);
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
