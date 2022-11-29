@@ -145,4 +145,59 @@
     .elementScroll{
         margin-left: 0px;
     }
+
+
+
+
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 28px;
+    }
+    .footerHeader{
+        font-size: 40px;
+        padding-bottom: 0;
+        padding-top: 60px;
+    }
+    
+    .mainFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 74px;
+        padding-top: 40px;
+    }
+    .footerButtons{
+        height: 120px;
+    }
+    .images{
+        padding: 0;
+    }
+    .images section{
+        width: 300px;
+        padding-left: 40px;
+        height: auto;
+        border: none;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .leftSide{
+        border-right: 1px solid white;
+        padding-right: 40px;
+    }
+    .rightSide{
+        padding-right: 40px;
+    }
+
+
+    .footerInformation{
+        margin-bottom: 0px;
+    }
+    .copyright p{
+        font-size: 16px;
+    }
 }
