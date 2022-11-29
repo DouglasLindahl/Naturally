@@ -136,4 +136,14 @@
     .quotePersonInfo {
         align-self:flex-start;
     }
+
+    .cardNavigation{
+        display: none;
+    }
+    .arrowContainer{
+        display: none;
+    }
+    .elementScroll{
+        margin-left: 0px;
+    }
 }
