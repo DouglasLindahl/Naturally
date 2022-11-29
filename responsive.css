@@ -9,6 +9,10 @@
         font-size: 16px;
     }
 
+    header nav {
+        
+    }
+
     /* hero section */
     .heroImg{
         content: url("images/hero/desktopHero.png");
@@ -47,8 +51,8 @@
     }
     
     /* showcase section */
-    .showcaseSection img{
-        content: url("images/walking-desktop.gif");
+    .showcaseSection video{
+        content: url("images/walking-desktop.mp4");
     }
     .showcaseArticle {
         flex-direction: row;
@@ -146,9 +150,7 @@
         margin-left: 0px;
     }
 
-
-
-
+    /* footer */
     footer{
         flex-direction: column;
         align-items: flex-start;
@@ -192,7 +194,6 @@
     .rightSide{
         padding-right: 40px;
     }
-
 
     .footerInformation{
         margin-bottom: 0px;
