@@ -226,6 +226,11 @@ header nav {
     flex-direction: column;
 }
 
+.materialSection p{
+    padding-top: 24px;
+    text-align: center;
+}
+
 .materialsContainer {
     display: flex;
     flex-direction: column;

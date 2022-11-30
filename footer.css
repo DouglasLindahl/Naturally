@@ -92,7 +92,8 @@ footer .footerButtons p:hover, .footerInformation p:hover{
 .footerLogo{
     position: absolute;
     right: 0;
-    height: 100%;
+    bottom: 0;
+    height: 94%;
     opacity: 5%;
     display: none;
 }
