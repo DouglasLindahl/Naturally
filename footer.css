@@ -109,34 +109,34 @@ footer a:hover{
 
 
 .twitter:hover{
-    content: url("images/footer/green/twitterG.png");
+    content: url("images/footer/green/twitterG.svg");
     cursor: pointer;
 }
 .facebook:hover{
-    content: url("images/footer/green/facebookG.png");
+    content: url("images/footer/green/facebookG.svg");
     cursor: pointer;
 }
 .instagram:hover{
-    content: url("images/footer/green/instagramG.png");
+    content: url("images/footer/green/instagramG.svg");
     cursor: pointer;
 }
 .youtube:hover{
-    content: url("images/footer/green/youtubeG.png");
+    content: url("images/footer/green/youtubeG.svg");
     cursor: pointer;
 }
 .klarna:hover{
-    content: url("images/footer/green/klarnaG.png");
+    content: url("images/footer/green/klarnaG.svg");
     cursor: pointer;
 }
 .mastercard:hover{
-    content: url("images/footer/green/mastercardG.png");
+    content: url("images/footer/green/mastercardG.svg");
     cursor: pointer;
 }
 .paypal:hover{
-    content: url("images/footer/green/paypalG.png");
+    content: url("images/footer/green/paypalG.svg");
     cursor: pointer;
 }
 .sweden:hover{
-    content: url("images/footer/green/swedenG.png");
+    content: url("images/footer/green/swedenG.svg");
     cursor: pointer;
 }
