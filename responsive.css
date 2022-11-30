@@ -220,4 +220,15 @@
     {
         display:inline-block;
     }
+
+    .languageMenu{
+        width: 602px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .languageMenuButtons{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }

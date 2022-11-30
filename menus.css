@@ -1,0 +1,60 @@
+
+.menuClosed{
+    display: none;
+}
+
+.languageMenu{
+    position: absolute;
+    top:50%;
+    transform: translateY(-80%);
+    z-index: 5;
+    width: 100%;
+    height: 344px;
+    background-color: var(--color-green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.languageMenuHeader{
+    padding-top: 60px;
+}
+
+.languageMenuButtons{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.languageMenu .languageSelect{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: var(--color-dark-green);
+}
+
+.languageMenu .languageSelect:hover{
+    background-color: var(--color-extra-dark-green);
+    color: var(--color-green-light);
+}
+
+.closeLanguageSelectMenu{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    stroke: white;
+}
+
+.closeLanguageSelectMenu:hover{
+    stroke: var(--color-green-light);
+}
