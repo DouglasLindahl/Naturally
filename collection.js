@@ -71,13 +71,6 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
 
     collectionCardVideo.setAttribute("onmouseover", "this.play()");
     collectionCardVideo.setAttribute("onmouseout", "this.pause();this.currentTime=0;");
-
-    // collectionCardVideo.addEventListener("mouseover", () => {
-    //     collectionCardVideo.play();
-    // })
-    // collectionCardVideo.addEventListener("mouseout", () => {
-    //     collectionCardVideo.pause();
-    // })
     
     collectionCards.append(collectionCard);
 }
