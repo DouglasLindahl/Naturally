@@ -9,13 +9,22 @@
         font-size: 16px;
     }
 
-    header nav {
-        
-    }
-
     /* hero section */
     .heroImg{
         content: url("images/hero/desktopHero.png");
+    }
+
+    .heroLogo {
+        align-self: flex-start;
+        margin-top: 236px;
+        margin-left: 48px;
+        height: 221.85px;
+        width: 480px;
+    }
+
+    .scrollArrow {
+        height: 42px;
+        width: 48.5px;
     }
 
     /* element cards section */

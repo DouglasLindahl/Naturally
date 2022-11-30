@@ -64,7 +64,12 @@ header nav {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+}
+
+.heroLogo{
+    margin-top: 240.8px;
 }
 
 .heroImg {
@@ -76,33 +81,9 @@ header nav {
     filter: brightness(70%);
 }
 
-.heroText {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    gap: 17px;
-    padding-left: 20px;
-    padding-right: 20px;
-    top: 260px;
-}
-
-.heroText :nth-child(1){
-    align-self: flex-start;
-}
-
-.heroText :nth-child(2){
-    align-self: flex-end;
-}
-
-.heroText :nth-child(3){
-    align-self: flex-end;
-    margin-top: 110px;
-}
-
 .scrollArrow {
-    height: 12px;
-    width: 32px;
+    height: 32px;
+    width: 36.95px;
     position: absolute;
     bottom: 48px;
 }

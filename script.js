@@ -32,7 +32,7 @@ const cards = [
     {header: "CONTROL THE ELEMENTS", img:"images/elements/element2.svg", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
     {header: "CONTROL THE ELEMENTS", img:"images/elements/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
     {header: "CONTROL THE ELEMENTS", img:"images/elements/element4.svg", infoHeader: "FIRE RESISTANT", info: "Shelter you from the campfire without harming the gear. This material feature has allready saved many lives."}
-]
+];
 
 
 
