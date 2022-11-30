@@ -15,6 +15,10 @@ header {
     align-items: center;
     background-color: var(--color-dark-green);
 }
+.signUpBox p:hover{
+    color: var(--color-green-light);
+    cursor: pointer;
+}
 
 header nav {
     display: flex;
