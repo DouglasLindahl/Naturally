@@ -423,6 +423,11 @@ header nav {
     letter-spacing: 2px;
 }
 
+.joinUsButton:hover {
+    color: var(--color-green-light);
+    background-color: var(--color-green);
+}
+
 /* footer */
 
 footer {

@@ -108,7 +108,7 @@
 
     .collectionCards {
         flex-direction: row;
-        gap: 40px;
+        gap:40px;
     }
 
     .collectionHeader {
