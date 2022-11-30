@@ -210,4 +210,8 @@
     .copyright p{
         font-size: 16px;
     }
+    .footerLogo
+    {
+        display:inline-block;
+    }
 }
