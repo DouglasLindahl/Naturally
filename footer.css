@@ -49,11 +49,6 @@ footer a:hover{
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
 }
-.images img:hover{
-    fill: var(--color-green-light);
-    cursor: pointer;
-    color: var(--color-green-light);
-}
 
 
 .images section{
@@ -65,8 +60,8 @@ footer a:hover{
     height: 80px;
 }
 
-.images img{
-    padding-right: 24px;
+.images svg{
+    margin-left: 24px;
 }
 .location{
     border-bottom: 1px solid white;
@@ -108,35 +103,10 @@ footer a:hover{
 }
 
 
-.twitter:hover{
-    content: url("images/footer/green/twitterG.svg");
-    cursor: pointer;
+.images svg{
+    fill: var(--color-dust);
 }
-.facebook:hover{
-    content: url("images/footer/green/facebookG.svg");
-    cursor: pointer;
-}
-.instagram:hover{
-    content: url("images/footer/green/instagramG.svg");
-    cursor: pointer;
-}
-.youtube:hover{
-    content: url("images/footer/green/youtubeG.svg");
-    cursor: pointer;
-}
-.klarna:hover{
-    content: url("images/footer/green/klarnaG.svg");
-    cursor: pointer;
-}
-.mastercard:hover{
-    content: url("images/footer/green/mastercardG.svg");
-    cursor: pointer;
-}
-.paypal:hover{
-    content: url("images/footer/green/paypalG.svg");
-    cursor: pointer;
-}
-.sweden:hover{
-    content: url("images/footer/green/swedenG.svg");
+.images svg:hover{
+    fill: var(--color-green-light);
     cursor: pointer;
 }
