@@ -9,17 +9,43 @@ const collectionCardsInfo = [
 ]
 
 const variants = [
-    {name: "jacket", normalUrl: "images/collection/jacket-yellow-180.gif", greenUrl: "images/collection/Jacket-green-180.gif"},
-    {name: "trousers", normalUrl: "images/collection/yellow-pants-180.gif", greenUrl: "images/collection/green-pant-180.gif"},
+    {name: "jacket", normalUrl: "images/collection/jacketOrange.mp4", greenUrl: "images/collection/Jacket-green-180.gif"},
+    {name: "trousers", normalUrl: "images/collection/pantsOrange.mp4", greenUrl: "images/collection/green-pant-180.gif"},
     {name: "cap", normalUrl: "images/collection/cap-box.png", greenUrl: ""},
     {name: "keychain", normalUrl: "images/collection/keychain.png", greenUrl: ""}
 ]
 
 for(let i = 0; i < collectionCardsInfo.length; i++)
 {
+    // let collectionCard = document.createElement("article");
+    // let collectionCardImageContainer = document.createElement("div");
+    // let collectionCardImage = document.createElement("img");
+    // let collectionCardText = document.createElement("div");
+    // let itemDescription = document.createElement("p");
+    // let itemPrice = document.createElement("p");
+
+    // collectionCard.classList.add("collectionCard");
+    // collectionCardImageContainer.classList.add("collectionCardImage");
+    // collectionCardText.classList.add("collectionCardText");
+    // itemDescription.classList.add("itemDescription");
+    // itemPrice.classList.add("itemPrice");
+
+    // collectionCard.append(collectionCardImageContainer);
+    // collectionCardImageContainer.append(collectionCardImage);
+    // collectionCard.append(collectionCardText);
+    // collectionCardText.append(itemDescription);
+    // collectionCardText.append(itemPrice);
+
+    // collectionCardImage.src = variants[i].normalUrl;
+    // itemDescription.textContent = collectionCardsInfo[i].description;
+    // itemPrice.textContent = collectionCardsInfo[i].price;
+    
+    // collectionCards.append(collectionCard);
+
     let collectionCard = document.createElement("article");
     let collectionCardImageContainer = document.createElement("div");
-    let collectionCardImage = document.createElement("img");
+    let collectionCardVideo = document.createElement("video");
+    let collectionCardVideoSource = document.createElement("source");
     let collectionCardText = document.createElement("div");
     let itemDescription = document.createElement("p");
     let itemPrice = document.createElement("p");
@@ -29,16 +55,22 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
     collectionCardText.classList.add("collectionCardText");
     itemDescription.classList.add("itemDescription");
     itemPrice.classList.add("itemPrice");
+    collectionCardVideo.classList.add("collectionVideo");
 
     collectionCard.append(collectionCardImageContainer);
-    collectionCardImageContainer.append(collectionCardImage);
+    collectionCardImageContainer.append(collectionCardVideo);
     collectionCard.append(collectionCardText);
     collectionCardText.append(itemDescription);
     collectionCardText.append(itemPrice);
+    collectionCardVideo.append(collectionCardVideoSource);
 
-    collectionCardImage.src = variants[i].normalUrl;
+    collectionCardVideo.muted=true;
+    collectionCardVideoSource.src = variants[i].normalUrl;
     itemDescription.textContent = collectionCardsInfo[i].description;
     itemPrice.textContent = collectionCardsInfo[i].price;
+
+    collectionCardVideo.setAttribute("onmouseover", "this.play()");
+    collectionCardVideo.setAttribute("onmouseout", "this.pause();this.currentTime=0;");
     
     collectionCards.append(collectionCard);
 }
