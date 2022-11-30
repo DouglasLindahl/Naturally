@@ -9,6 +9,10 @@
         font-size: 16px;
     }
 
+    .hamburgerMenu {
+        display: none;
+    }
+
     /* hero section */
     .heroImg{
         content: url("images/hero/heroDesktop.png");
