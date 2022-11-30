@@ -30,6 +30,16 @@ footer{
     padding-bottom: 12px;
 }
 
+footer a{
+    padding-bottom: 12px;
+    font-size: 16px;
+    display: block;
+}
+footer a:hover{
+    color: var(--color-green-light);
+    cursor: pointer;
+}
+
 .images{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -38,6 +48,11 @@ footer{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
+}
+.images img:hover{
+    fill: var(--color-green-light);
+    cursor: pointer;
+    color: var(--color-green-light);
 }
 
 
@@ -83,12 +98,6 @@ footer{
     padding-left: 20px;
 }
 
-
-footer .footerButtons p:hover, .footerInformation p:hover{
-    color: var(--color-green-light);
-    cursor: pointer;
-}
-
 .footerLogo{
     position: absolute;
     right: 0;
@@ -96,4 +105,38 @@ footer .footerButtons p:hover, .footerInformation p:hover{
     height: 94%;
     opacity: 5%;
     display: none;
+}
+
+
+.twitter:hover{
+    content: url("images/footer/green/twitterG.png");
+    cursor: pointer;
+}
+.facebook:hover{
+    content: url("images/footer/green/facebookG.png");
+    cursor: pointer;
+}
+.instagram:hover{
+    content: url("images/footer/green/instagramG.png");
+    cursor: pointer;
+}
+.youtube:hover{
+    content: url("images/footer/green/youtubeG.png");
+    cursor: pointer;
+}
+.klarna:hover{
+    content: url("images/footer/green/klarnaG.png");
+    cursor: pointer;
+}
+.mastercard:hover{
+    content: url("images/footer/green/mastercardG.png");
+    cursor: pointer;
+}
+.paypal:hover{
+    content: url("images/footer/green/paypalG.png");
+    cursor: pointer;
+}
+.sweden:hover{
+    content: url("images/footer/green/swedenG.png");
+    cursor: pointer;
 }
