@@ -234,8 +234,10 @@ header nav {
 
 .materialsContainer {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 73px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .materialsContainer img {
