@@ -16,11 +16,9 @@ const variants = [
 ]
 
 for(let i = 0; i < collectionCardsInfo.length; i++)
-{
+{   
     const collectionCard = document.createElement("article");
     const collectionCardImageContainer = document.createElement("div");
-    const collectionCardVideo = document.createElement("video");
-    const collectionCardVideoSource = document.createElement("source");
     const collectionCardText = document.createElement("div");
     const itemDescription = document.createElement("p");
     const itemPrice = document.createElement("p");
@@ -30,22 +28,39 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
     collectionCardText.classList.add("collectionCardText");
     itemDescription.classList.add("itemDescription");
     itemPrice.classList.add("itemPrice");
-    collectionCardVideo.classList.add("collectionVideo");
 
     collectionCard.append(collectionCardImageContainer);
-    collectionCardImageContainer.append(collectionCardVideo);
     collectionCard.append(collectionCardText);
     collectionCardText.append(itemDescription);
     collectionCardText.append(itemPrice);
-    collectionCardVideo.append(collectionCardVideoSource);
 
-    collectionCardVideo.muted=true;
-    collectionCardVideoSource.src = variants[i].normalUrl;
     itemDescription.textContent = collectionCardsInfo[i].description;
     itemPrice.textContent = collectionCardsInfo[i].price;
-
-    collectionCardVideo.setAttribute("onmouseover", "this.play()");
-    collectionCardVideo.setAttribute("onmouseout", "this.pause();this.currentTime=0;");
     
     collectionCards.append(collectionCard);
+
+    if (variants[i].normalUrl.includes(".png") === true)
+    {
+        let collectionCardImage = document.createElement("img");
+        collectionCardImage.src = variants[i].normalUrl;
+
+        collectionCardImage.classList.add("collectionVideo");
+
+        collectionCardImageContainer.append(collectionCardImage);
+    }
+    else{
+        let collectionCardVideo = document.createElement("video");
+
+        let collectionCardVideoSource = document.createElement("source");
+        collectionCardVideoSource.src = variants[i].normalUrl;
+
+        collectionCardVideo.append(collectionCardVideoSource);
+        collectionCardImageContainer.append(collectionCardVideo);
+
+        collectionCardVideo.classList.add("collectionVideo");
+
+        collectionCardVideo.setAttribute("onmouseover", "this.play()");
+        collectionCardVideo.setAttribute("onmouseout", "this.pause();this.currentTime=0;");
+        collectionCardVideo.muted=true;
+    }
 }
