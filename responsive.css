@@ -11,7 +11,7 @@
 
     /* hero section */
     .heroImg{
-        content: url("images/hero/desktopHero.png");
+        content: url("images/hero/heroDesktop.png");
     }
 
     .heroLogo {
