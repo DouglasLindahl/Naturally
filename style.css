@@ -258,7 +258,7 @@ header nav {
 /* collection section */
 
 .collectionSection {
-    height: 1,536px;
+    height: auto;
     width: 100%;
     background-color: var(--color-green);
     display: flex;
@@ -272,7 +272,9 @@ header nav {
 
 .collectionCards {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
     gap: 12px;
 }
 
@@ -285,11 +287,8 @@ header nav {
 }
 
 .collectionCardImage img{
-    content: url(images/collection/collectionJacket.png);
-}
-
-.collectionCardImage :hover{
-    content: url("images/collection/jacket-yellow.gif");
+    width: 350px;
+    height: 350px;
 }
 
 .collectionText {

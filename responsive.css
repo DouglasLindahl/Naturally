@@ -92,7 +92,7 @@
     
     /* collection section */
     .collectionSection {
-        height: 842px;
+        height: auto;
         padding-top: 60px;
         padding-bottom: 60px;
     }
