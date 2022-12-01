@@ -20,6 +20,7 @@ a:hover{
     align-items: center;
     background-color: var(--color-dark-green);
 }
+
 .signUpBox p:hover {
     color: var(--color-green-light);
     cursor: pointer;
@@ -35,11 +36,15 @@ nav {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: 0.3s ease-in;
+    transition: 0.3s linear;
 }
 
-svg {
-    transition: 0.3s ease-in;
+nav p {
+    transition: 0.3s linear;
+}
+
+nav svg {
+    transition: 0.3s linear;
 }
 
 .navbarMenu a:hover {
