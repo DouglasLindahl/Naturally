@@ -298,12 +298,12 @@ nav svg{
     padding-top: 60px;
     text-align: center;
 }
-.materialSection :nth-child(2)
-{
+
+.materialSection :nth-child(2){
     font-size: 36px;
 }
-.materialSection :nth-child(4)
-{
+
+.materialSection :nth-child(4){
     padding-top: 40px;
     font-size: 24px;
 }
