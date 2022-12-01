@@ -16,6 +16,7 @@ const elementSwipeCheck = document.getElementById("elementSwipeCheck");
 const heroJumpSection = document.getElementById("heroJumpSection");
 
 const windowWidth = window.matchMedia("(min-width: 1024px)");
+
 let isMobile;
 
 let touchStart = 0;
