@@ -42,7 +42,7 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
         const collectionCardImage = document.createElement("img");
         collectionCardImage.src = variants[i].normalUrl;
 
-        collectionCardImage.classList.add("collectionVideo");
+        collectionCardImage.classList.add("collectionMedia");
 
         collectionCardImageContainer.append(collectionCardImage);
 
@@ -59,7 +59,7 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
         collectionCardImageContainer.append(collectionCardVideo);
         collectionCardImageContainer.append(colorButtonOrange, colorButtonGreen);
 
-        collectionCardVideo.classList.add("collectionVideo");
+        collectionCardVideo.classList.add("collectionMedia");
         colorButtonOrange.classList.add("viewColorOrange");
         colorButtonOrange.classList.add("selectedButton");
         colorButtonGreen.classList.add("viewColorGreen");
