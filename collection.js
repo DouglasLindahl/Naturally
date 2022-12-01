@@ -22,36 +22,41 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
     const collectionCardText = document.createElement("div");
     const itemDescription = document.createElement("p");
     const itemPrice = document.createElement("p");
+    const colorButtonOrange = document.createElement("div");
+    const colorButtonGreen = document.createElement("div");
+
 
     collectionCard.classList.add("collectionCard");
-    collectionCardImageContainer.classList.add("collectionCardImage");
+    collectionCardImageContainer.classList.add("collectionCardMediaContainer");
     collectionCardText.classList.add("collectionCardText");
     itemDescription.classList.add("itemDescription");
     itemPrice.classList.add("itemPrice");
+    colorButtonOrange.classList.add("viewColorOrange");
+    colorButtonGreen.classList.add("viewColorGreen");
 
-    collectionCard.append(collectionCardImageContainer);
-    collectionCard.append(collectionCardText);
-    collectionCardText.append(itemDescription);
-    collectionCardText.append(itemPrice);
+    collectionCard.append(collectionCardImageContainer, collectionCardText);
+    collectionCardText.append(itemDescription, itemPrice);
+    collectionCardImageContainer.append(colorButtonOrange, colorButtonGreen);
 
     itemDescription.textContent = collectionCardsInfo[i].description;
     itemPrice.textContent = collectionCardsInfo[i].price;
     
     collectionCards.append(collectionCard);
 
-    if (variants[i].normalUrl.includes(".png") === true)
+    if (variants[i].normalUrl.includes(".png", ".jpg", ".jpeg", ".gif", ".svg") === true)
     {
-        let collectionCardImage = document.createElement("img");
+        const collectionCardImage = document.createElement("img");
         collectionCardImage.src = variants[i].normalUrl;
 
         collectionCardImage.classList.add("collectionVideo");
 
         collectionCardImageContainer.append(collectionCardImage);
+
     }
     else{
-        let collectionCardVideo = document.createElement("video");
+        const collectionCardVideo = document.createElement("video");
+        const collectionCardVideoSource = document.createElement("source");
 
-        let collectionCardVideoSource = document.createElement("source");
         collectionCardVideoSource.src = variants[i].normalUrl;
 
         collectionCardVideo.append(collectionCardVideoSource);
