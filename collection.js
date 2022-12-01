@@ -9,10 +9,10 @@ const collectionCardsInfo = [
 ]
 
 const variants = [
-    {name: "jacket", normalUrl: "images/collection/jacketOrange.mp4", greenUrl: "images/collection/Jacket-green-180.gif"},
-    {name: "trousers", normalUrl: "images/collection/pantsOrange.mp4", greenUrl: "images/collection/green-pant-180.gif"},
-    {name: "cap", normalUrl: "images/collection/Keps.png", greenUrl: ""},
-    {name: "keychain", normalUrl: "images/collection/Nyckelring.png", greenUrl: ""}
+    {name: "jacket", normalUrl: "images/collection/jacketOrange.mp4", greenUrl: "images/collection/jacketGreen.mp4"},
+    {name: "trousers", normalUrl: "images/collection/pantsOrange.mp4", greenUrl: "images/collection/pantsGreen.mp4"},
+    {name: "cap", normalUrl: "images/collection/Keps.png"},
+    {name: "keychain", normalUrl: "images/collection/Nyckelring.png"}
 ]
 
 for(let i = 0; i < collectionCardsInfo.length; i++)
@@ -22,28 +22,22 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
     const collectionCardText = document.createElement("div");
     const itemDescription = document.createElement("p");
     const itemPrice = document.createElement("p");
-    const colorButtonOrange = document.createElement("div");
-    const colorButtonGreen = document.createElement("div");
-
 
     collectionCard.classList.add("collectionCard");
     collectionCardImageContainer.classList.add("collectionCardMediaContainer");
     collectionCardText.classList.add("collectionCardText");
     itemDescription.classList.add("itemDescription");
     itemPrice.classList.add("itemPrice");
-    colorButtonOrange.classList.add("viewColorOrange");
-    colorButtonGreen.classList.add("viewColorGreen");
 
     collectionCard.append(collectionCardImageContainer, collectionCardText);
     collectionCardText.append(itemDescription, itemPrice);
-    collectionCardImageContainer.append(colorButtonOrange, colorButtonGreen);
 
     itemDescription.textContent = collectionCardsInfo[i].description;
     itemPrice.textContent = collectionCardsInfo[i].price;
     
     collectionCards.append(collectionCard);
 
-    if (variants[i].normalUrl.includes(".png", ".jpg", ".jpeg", ".gif", ".svg") === true)
+    if (variants[i].normalUrl.includes(".png", ".jpg", ".jpeg", ".gif", ) === true)
     {
         const collectionCardImage = document.createElement("img");
         collectionCardImage.src = variants[i].normalUrl;
@@ -56,16 +50,36 @@ for(let i = 0; i < collectionCardsInfo.length; i++)
     else{
         const collectionCardVideo = document.createElement("video");
         const collectionCardVideoSource = document.createElement("source");
+        const colorButtonOrange = document.createElement("div");
+        const colorButtonGreen = document.createElement("div");  
 
-        collectionCardVideoSource.src = variants[i].normalUrl;
+        collectionCardVideo.setAttribute("src", variants[i].normalUrl);
 
         collectionCardVideo.append(collectionCardVideoSource);
         collectionCardImageContainer.append(collectionCardVideo);
+        collectionCardImageContainer.append(colorButtonOrange, colorButtonGreen);
 
         collectionCardVideo.classList.add("collectionVideo");
+        colorButtonOrange.classList.add("viewColorOrange");
+        colorButtonOrange.classList.add("selectedButton");
+        colorButtonGreen.classList.add("viewColorGreen");
 
         collectionCardVideo.setAttribute("onmouseover", "this.play()");
         collectionCardVideo.setAttribute("onmouseout", "this.pause();this.currentTime=0;");
         collectionCardVideo.muted=true;
+
+        const changeItemColor = () => {
+            colorButtonGreen.addEventListener("click", () => {
+            colorButtonGreen.classList.add("selectedButton");
+            colorButtonOrange.classList.remove("selectedButton");
+            collectionCardVideo.setAttribute("src", variants[i].greenUrl);
+        })
+            colorButtonOrange.addEventListener("click", () => {
+                colorButtonOrange.classList.add("selectedButton");
+                colorButtonGreen.classList.remove("selectedButton");
+                collectionCardVideo.setAttribute("src", variants[i].normalUrl);
+            })
+        }
+        changeItemColor();
     }
 }
