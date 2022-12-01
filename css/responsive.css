@@ -101,6 +101,10 @@
         flex-direction: row;
     }
 
+    .materialSection :nth-child(1){
+        letter-spacing: 2.4px;
+    }
+
     .materialSection :nth-child(2) {
         font-size: 36px;
     }
