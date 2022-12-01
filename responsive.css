@@ -231,4 +231,12 @@
         padding-left: 60px;
         padding-right: 60px;
     }
+    .navbarMenu{
+        display: block;
+    }
+
+    .logo{
+        width: 48px;
+        height: 42px;
+    }
 }

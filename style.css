@@ -11,6 +11,7 @@ a:hover{
     cursor: pointer;
 }
 
+
 .signUpBox {
     width: 100%;
     height: 44px;
@@ -26,6 +27,7 @@ a:hover{
 }
 
 header nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +35,36 @@ header nav {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+nav:hover{
+    background-color: white;
+    color:black;
+}
+.navbarMenu a:hover{
+    color: var(--color-green-light);
+    cursor: pointer;
+}
+nav:hover svg{
+    fill: black;
+}
+nav .navIcons svg:hover{
+    fill: var(--color-green-light);
+    cursor: pointer;
+}
+nav:hover .languageArrow{
+    fill:none;
+    stroke: black;
+}
+nav svg{
+    fill: white;
+}
+.languageArrow{
+    fill:none;
+    stroke: white;
+}
+
 
 .navbarLeftSide{
     display: flex;
@@ -44,9 +75,13 @@ header nav {
     padding-right: 48px;
 }
 
+.navbarMenu{
+    display: none;
+}
+
 .logo {
-    height: 30px;
-    width: 34px;
+    height: 34px;
+    width: 30px;
     margin-right: 32px;
 }
 
@@ -60,6 +95,13 @@ header nav {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    cursor: pointer;
+}
+.languageSelection:hover{
+    color: var(--color-green-light);
+}
+.languageSelection:hover svg{
+    stroke: var(--color-green-light);
 }
 
 .magnifyingGlass {
@@ -106,6 +148,11 @@ header nav {
     width: 36.95px;
     position: absolute;
     bottom: 48px;
+    fill: white;
+}
+
+.scrollArrow:hover{
+    fill: var(--color-green-light);
 }
 
 .arrow{
