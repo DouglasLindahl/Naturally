@@ -5,7 +5,10 @@ Developer:
 Douglas Lindahl - WU22
 Gustav Enoksson - WU22
 
-Designer:
+Digital Designer:
 Frida Andersson - DD22
+Jacob - DD22
 
-Graphics designer: 
+Computer Graphics: 
+Tove Saaranen - CG22
+Niklas Berg - CG22
