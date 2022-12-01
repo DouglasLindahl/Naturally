@@ -6,6 +6,11 @@ header {
     position: absolute;
 }
 
+a:hover{
+    color: var(--color-green-light);
+    cursor: pointer;
+}
+
 .signUpBox {
     width: 100%;
     height: 44px;
@@ -30,9 +35,19 @@ header nav {
     padding-top: 20px;
 }
 
+.navbarLeftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarLeftSide a{
+    padding-right: 48px;
+}
+
 .logo {
     height: 30px;
     width: 34px;
+    margin-right: 32px;
 }
 
 .navIcons {
