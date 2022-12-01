@@ -91,9 +91,6 @@
     }
 
     /* material section */
-    .materialSection {
-        height: 596px;
-    }
     
     .materialsContainer {
         flex-direction: row;
@@ -111,6 +108,10 @@
     .quotePersonInfo img {
         height: 126.69px;
         width: 126.69px;
+    }
+
+    .quoteSection p i{
+        line-height: 36px;
     }
     
     /* collection section */

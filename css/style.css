@@ -295,25 +295,27 @@ nav svg:not(.languageArrow){
     text-align: center;
 }
 
+.materialSection p{
+    justify-self: flex-end;
+}
+
 .materialSection :nth-child(2){
     font-size: 36px;
 }
 
-.materialSection :nth-child(4){
-    padding-top: 40px;
-    font-size: 24px;
-}
+
 
 .materialsContainer {
     display: flex;
     width: 100%;
+    height: auto;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .materialsContainer img {
-    height: 180px;
+    height: auto;
     width: 224.82px;
 }
 /* collection section */
