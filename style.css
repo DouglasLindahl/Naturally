@@ -368,9 +368,14 @@ nav svg{
 
 .itemDescription {
     font-size: 16px;
-    color: var(--color-green-light);
 }
 
+.collectionCard:hover{
+    cursor: pointer;
+}
+.collectionCard:hover .itemDescription{
+    color: var(--color-green-light);
+}
 .itemPrice {
     font-size: 16px;
 }
