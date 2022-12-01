@@ -13,6 +13,22 @@
         display: none;
     }
 
+
+    nav:hover{
+        background-color: white;
+        color:black;
+    }
+
+    nav:hover svg:not(.languageArrow){
+        fill: black;
+    }
+    nav:hover .languageArrow{
+        stroke: black;
+    }
+    .languageSelection:hover svg{
+        stroke: var(--color-green-light);
+    }
+
     /* hero section */
     .heroImg{
         content: url("../images/hero/heroDesktop.png");
@@ -30,6 +46,7 @@
         height: 42px;
         width: 48.5px;
     }
+
 
     /* element cards section */
     .elementCard{
