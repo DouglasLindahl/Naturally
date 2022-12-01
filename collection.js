@@ -11,8 +11,8 @@ const collectionCardsInfo = [
 const variants = [
     {name: "jacket", normalUrl: "images/collection/jacketOrange.mp4", greenUrl: "images/collection/jacketGreen.mp4"},
     {name: "trousers", normalUrl: "images/collection/pantsOrange.mp4", greenUrl: "images/collection/pantsGreen.mp4"},
-    {name: "cap", normalUrl: "images/collection/Keps.png"},
-    {name: "keychain", normalUrl: "images/collection/Nyckelring.png"}
+    {name: "cap", normalUrl: "images/collection/naturallyGreenCap.png"},
+    {name: "keychain", normalUrl: "images/collection/naturallyKeyring.png"}
 ]
 
 for(let i = 0; i < collectionCardsInfo.length; i++)
