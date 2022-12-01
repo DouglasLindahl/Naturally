@@ -112,6 +112,7 @@
     .collectionCards {
         flex-direction: row;
         gap:40px;
+        width: 772px;
     }
 
     .collectionHeader {
@@ -137,8 +138,8 @@
         align-items: flex-start;
     }
 
-
     .joinUsText {
+        max-width: 527px;
         align-items: flex-start;
     }
 
@@ -148,6 +149,7 @@
 
     .joinUsText :nth-child(2) {
         text-align: start;
+        line-height: 36px;
     }
 
     /* quote section */

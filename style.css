@@ -335,7 +335,6 @@ nav svg{
     padding-bottom: 40px;
 }
 
-
 .collectionCards {
     display: flex;
     flex-wrap: wrap;
@@ -349,7 +348,9 @@ nav svg{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 350px;
 }
 
 .collectionCardMediaContainer {
@@ -399,7 +400,9 @@ nav svg{
 }
 
 .collectionSection button {
-    width: 350px;
+    max-width: 350px;
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 
 .collectionMedia {
@@ -513,6 +516,7 @@ nav svg{
 }
 
 .joinUsText {
+    max-width: 348px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,15 +526,13 @@ nav svg{
 
 .joinUsHeadline {
     font-size: 24px;
-    font-family: "AvenirRegular";
 }
-.joinUsText :nth-child(1)
-{
+.joinUsText :nth-child(1){
     font-family: "AvenirMedium";
 }
 .joinUsText :nth-child(2) {
     text-align: center;
-    line-height: 36px;
+    line-height: 24px;
 }
 
 .joinUsButton {
