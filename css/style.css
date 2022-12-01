@@ -207,7 +207,6 @@ nav svg:not(.languageArrow) {
     margin-bottom: 12px;
     width: 100%;
     text-align: center;
-    color: var(--color-black);
 }
 
 .elementText p{
