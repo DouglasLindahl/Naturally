@@ -294,9 +294,18 @@ nav svg{
     flex-direction: column;
 }
 
-.materialSection p{
-    padding-top: 24px;
+.materialSection{
+    padding-top: 60px;
     text-align: center;
+}
+.materialSection :nth-child(2)
+{
+    font-size: 36px;
+}
+.materialSection :nth-child(4)
+{
+    padding-top: 40px;
+    font-size: 24px;
 }
 
 .materialsContainer {
@@ -325,6 +334,7 @@ nav svg{
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 
 .collectionCards {
     display: flex;
@@ -422,7 +432,10 @@ nav svg{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 388px;
+}
+
+.quoteSection p i{
+    line-height: 24px;
 }
 
 .quoteArticle {
@@ -432,18 +445,19 @@ nav svg{
     flex-direction: column;
     width: 350px;
     gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.quoteArticle :nth-child(2) {
+
+.startQuote{
     align-self: flex-start;
 }
-
-.quoteArticle :nth-child(4) {
+.endQuote{
     align-self: flex-end;
 }
 
 .quotePersonInfo {
-    height: 127px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -485,12 +499,12 @@ nav svg{
 }
 
 .joinUsArticle {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
-    height: 260px;
-    width: 348px;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
 }
 
 .joinUsText {
@@ -503,10 +517,15 @@ nav svg{
 
 .joinUsHeadline {
     font-size: 24px;
+    font-family: "AvenirRegular";
 }
-
+.joinUsText :nth-child(1)
+{
+    font-family: "AvenirMedium";
+}
 .joinUsText :nth-child(2) {
     text-align: center;
+    line-height: 36px;
 }
 
 .joinUsButton {
@@ -522,7 +541,7 @@ nav svg{
 
 .joinUsButton:hover {
     color: var(--color-green-light);
-    background-color: var(--color-green);
+    background-color: var(--color-extra-dark-green);
 }
 
 /* footer */

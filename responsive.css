@@ -89,13 +89,12 @@
     }
 
     /* quote section */
-    .quoteSection {
-        height: 624px;
-    }
 
     .quoteArticle {
         font-size: 24px;
         width: 527.88px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .quotePersonInfo img {
@@ -119,6 +118,10 @@
         font-size: 64px;
     }
 
+    .collectionText{
+        gap: 40px;
+    }
+
     /* join us section */
     .joinUsSection {
         height: 468px;
@@ -134,9 +137,6 @@
         align-items: flex-start;
     }
 
-    .joinUsHeadline {
-        font-family: "AvenirBold";
-    }
 
     .joinUsText {
         align-items: flex-start;
