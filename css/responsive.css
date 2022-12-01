@@ -30,9 +30,6 @@
     }
 
     /* hero section */
-    .heroImg{
-        content: url("../images/hero/heroDesktop.png");
-    }
 
     .heroLogo {
         align-self: flex-start;
@@ -187,9 +184,11 @@
         padding-left: 28px;
     }
     .footerHeader{
-        font-size: 40px;
         padding-bottom: 0;
         padding-top: 60px;
+    }
+    .footerHeader p{
+        font-size: 40px;
     }
     
     .mainFooter{
@@ -238,7 +237,6 @@
     }
 
     .languageMenu{
-        width: 602px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -254,5 +252,12 @@
     .logo{
         width: 48px;
         height: 42px;
+    }
+}
+
+
+@media screen and (min-width: 570px) {
+    .heroImg{
+        content: url("../images/hero/heroDesktop.png");
     }
 }
