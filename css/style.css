@@ -11,7 +11,6 @@ a:hover{
     cursor: pointer;
 }
 
-
 .signUpBox {
     width: 100%;
     height: 44px;
@@ -21,12 +20,12 @@ a:hover{
     align-items: center;
     background-color: var(--color-dark-green);
 }
-.signUpBox p:hover{
+.signUpBox p:hover {
     color: var(--color-green-light);
     cursor: pointer;
 }
 
-header nav {
+nav {
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -36,48 +35,57 @@ header nav {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: 0.3s ease-in;
 }
 
+svg {
+    transition: 0.3s ease-in;
+}
 
-.navbarMenu a:hover{
+.navbarMenu a:hover {
     color: var(--color-green-light);
     cursor: pointer;
 }
-nav .navIcons svg:not(.languageArrow):hover{
+
+nav .navIcons svg:not(.languageArrow):hover {
     fill: var(--color-green-light);
     cursor: pointer;
 }
-.languageArrow:hover{
+
+.languageArrow:hover {
     stroke: var(--color-green-light);
 }
-nav svg:not(.languageArrow){
+
+nav svg:not(.languageArrow) {
     fill: white;
 }
-.languageArrow{
+
+.languageArrow {
     stroke: white;
 }
 
-.languageSelection:hover{
+.languageArrow p {
+    stroke: white;
+}
+
+.languageSelection:hover {
     color: var(--color-green-light);
 }
-.languageSelection:hover svg{
+
+.languageSelection:hover svg {
     stroke: var(--color-green-light);
 }
 
-
-
-
-
-.navbarLeftSide{
+.navbarLeftSide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navbarLeftSide a{
+.navbarLeftSide a {
     padding-right: 48px;
 }
 
-.navbarMenu{
+.navbarMenu {
     display: none;
 }
 
@@ -126,7 +134,7 @@ nav svg:not(.languageArrow){
     align-items: center;
 }
 
-.heroLogo{
+.heroLogo {
     margin-top: 240.8px;
 }
 
@@ -147,11 +155,12 @@ nav svg:not(.languageArrow){
     fill: white;
 }
 
-.scrollArrow:hover{
+.scrollArrow:hover {
     fill: var(--color-green-light);
+    scale: 1.1;
 }
 
-.arrow{
+.arrow {
     cursor: pointer;
     z-index: 5;
 }
@@ -162,7 +171,7 @@ nav svg:not(.languageArrow){
 
 /* element cards */
 
-.cardNavigation{
+.cardNavigation {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -171,13 +180,13 @@ nav svg:not(.languageArrow){
     margin-top: 48px;
 }
 
-.navigationLine{
+.navigationLine {
     height: 2px; 
     width: 48px;
     background-color: #D9D9D9;
 }
 
-.navLineSelected{
+.navLineSelected {
     background-color: #131313;
 }
 
@@ -203,6 +212,7 @@ nav svg:not(.languageArrow){
     width: 100%;
     text-align: center;
 }
+
 .elementText p{
     width: 80%;
     text-align: center;
@@ -269,7 +279,6 @@ nav svg:not(.languageArrow){
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .showcaseSection video{
@@ -288,22 +297,16 @@ nav svg:not(.languageArrow){
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.materialSection{
-    padding-top: 60px;
     text-align: center;
 }
 
-.materialSection p{
-    justify-self: flex-end;
+.materialSection :nth-child(1){
+    letter-spacing: 1.6px;
 }
 
 .materialSection :nth-child(2){
-    font-size: 36px;
+    font-size: 24px;
 }
-
-
 
 .materialsContainer {
     display: flex;
@@ -316,7 +319,7 @@ nav svg:not(.languageArrow){
 
 .materialsContainer img {
     height: auto;
-    width: 224.82px;
+    width: 250px;
 }
 /* collection section */
 
@@ -359,6 +362,14 @@ nav svg:not(.languageArrow){
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.collectionText :nth-child(1){
+    letter-spacing: 1.6px;
+}
+
+.collectionText :nth-child(3){
+    letter-spacing: 1.6px;
 }
 
 .jacket :hover{
@@ -440,7 +451,7 @@ nav svg:not(.languageArrow){
     width: 100%;
 }
 
-.quoteSection p i{
+.quoteSection p i {
     line-height: 24px;
 }
 
@@ -455,11 +466,10 @@ nav svg:not(.languageArrow){
     padding-bottom: 40px;
 }
 
-
-.startQuote{
+.startQuote {
     align-self: flex-start;
 }
-.endQuote{
+.endQuote {
     align-self: flex-end;
 }
 
@@ -500,7 +510,8 @@ nav svg:not(.languageArrow){
     align-items: center;
     justify-content: center;
 }
-.joinUsSection img{
+
+.joinUsSection img {
     display: none;
 }
 
@@ -523,11 +534,14 @@ nav svg:not(.languageArrow){
 }
 
 .joinUsHeadline {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+.joinUsText :nth-child(1) {
     font-size: 24px;
 }
-.joinUsText :nth-child(1){
-    font-family: "AvenirMedium";
-}
+
 .joinUsText :nth-child(2) {
     text-align: center;
     line-height: 24px;

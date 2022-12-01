@@ -13,19 +13,20 @@
         display: none;
     }
 
-
-    nav:hover{
+    nav:hover {
         background-color: white;
         color:black;
     }
 
-    nav:hover svg:not(.languageArrow){
+    nav:hover svg:not(.languageArrow) {
         fill: black;
     }
-    nav:hover .languageArrow{
+
+    nav:hover .languageArrow {
         stroke: black;
     }
-    .languageSelection:hover svg{
+
+    .languageSelection:hover svg {
         stroke: var(--color-green-light);
     }
 
@@ -44,9 +45,8 @@
         width: 48.5px;
     }
 
-
     /* element cards section */
-    .elementCard{
+    .elementCard {
         width: auto;
         height: 100%;
         display: flex;
@@ -55,21 +55,25 @@
         gap: 56px;
         align-items: center;
     }
+
     .elementText p {
         width: 80%;
         font-size: 16px;
     }
+
     .elementCard h3{
         display: none;
     }
-    .elementCard h4
-    {
+
+    .elementCard h4 {
         width: 100%;
     }
+
     .elementCard img{
         width: 128px;
         height: 111px;
     }
+
     .elementText{
         width: 100%;
         display: flex;
@@ -82,6 +86,7 @@
         flex-direction: row;
         align-items: center;
     }
+
     .showcaseText {
         align-self: flex-end;
         order: -1;
@@ -96,6 +101,10 @@
         flex-direction: row;
     }
 
+    .materialSection :nth-child(2) {
+        font-size: 36px;
+    }
+    
     /* quote section */
 
     .quoteArticle {
@@ -110,7 +119,7 @@
         width: 126.69px;
     }
 
-    .quoteSection p i{
+    .quoteSection p i {
         line-height: 36px;
     }
     
@@ -131,7 +140,7 @@
         font-size: 64px;
     }
 
-    .collectionText{
+    .collectionText {
         gap: 40px;
     }
 
@@ -140,6 +149,12 @@
         height: 468px;
         justify-content: space-between;
     }
+
+    .joinUsHeadline {
+        font-size: 24px;
+        letter-spacing: 2.4px;
+    }
+
     .joinUsSection img{
         display: block;
         opacity: 30%;

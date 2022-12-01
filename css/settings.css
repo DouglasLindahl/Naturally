@@ -39,7 +39,7 @@ body {
     margin: 0px;
     color: var(--color-snow);
     font-family: "AvenirRegular";
-    letter-spacing: 0.01em;
+    letter-spacing: 0.01em
 }
 
 h1 {
@@ -72,11 +72,6 @@ h6 {
 html {
     scroll-behavior: smooth;
   }
-
-.elementCardsSection{
-    color: black;
-    background-color: #F2F2F3;
-}
 
 .hidden{
     display: none;
