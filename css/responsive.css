@@ -248,6 +248,7 @@
     }
     .navbarMenu{
         display: block;
+        font-size: 20px;
     }
 
     .logo{
