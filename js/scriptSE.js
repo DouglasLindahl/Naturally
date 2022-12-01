@@ -29,10 +29,10 @@ const howManyCards = 4;
 
 //element cards infomation
 const cards = [
-    {header: "CONTROL THE ELEMENTS", img:"images/elements/element1.svg", infoHeader: "ALWAYS WATERPROOF", info: "Shields you and keeps you dry in all your endeavours. From snowstorms to moonsoon rain, or while commuting to work."},
-    {header: "CONTROL THE ELEMENTS", img:"images/elements/element2.svg", infoHeader: "PERFECTLY WINDPROOF", info: "Guards you from one of the strongest elements, wind. No gust will cool you of, even when exposed to icy winds."},
-    {header: "CONTROL THE ELEMENTS", img:"images/elements/element3.svg", infoHeader: "DIRT NEGLECTING", info: "Defends you from dirt and scratches. With our new tecnology it´s hard to leave a mark on your gear even during the toughest adventures."},
-    {header: "CONTROL THE ELEMENTS", img:"images/elements/element4.svg", infoHeader: "TEMPERATURE REGULATING", info: "Preserves your body-temperature comfortable no matter what surroundings you’re in. Not even fire can break this garment."}
+    {header: "KONTROLLERA ELEMENTEN", img:"images/elements/element1.svg", infoHeader: "VATTENTÄT", info: "Skyddar dig och håller dig torr i alla dina ansträngningar. Från snöstormar till månsunsregn, eller när du pendlar till jobbet."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/elements/element2.svg", infoHeader: "VINDTÄT", info: "Skyddar dig från ett av de starkaste elementen, vind. Ingen vind kommer att kyla dig, även när den utsätts för isiga vindar."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/elements/element3.svg", infoHeader: "SMUTSAVVISANDE", info: "Skyddar dig mot smuts och repor. Med vår nya teknologi är det svårt att repa din utrustning även under de tuffaste äventyren."},
+    {header: "KONTROLLERA ELEMENTEN", img:"images/elements/element4.svg", infoHeader: "TEMPERATURANPASSANDE", info: "Håller din kroppstemperatur bekväm oavsett vilken omgivning du befinner dig i. Inte ens eld kan bryta detta plagg."}
 ];
 
 
