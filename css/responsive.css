@@ -64,9 +64,6 @@
     }
     
     /* showcase section */
-    .showcaseSection video{
-        content: url("images/walking-desktop.mp4");
-    }
     .showcaseArticle {
         flex-direction: row;
         align-items: center;
