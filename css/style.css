@@ -36,15 +36,6 @@ nav {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: 0.3s linear;
-}
-
-nav p {
-    transition: 0.3s linear;
-}
-
-nav svg {
-    transition: 0.3s linear;
 }
 
 .navbarMenu a:hover {
@@ -162,7 +153,6 @@ nav svg:not(.languageArrow) {
 
 .scrollArrow:hover {
     fill: var(--color-green-light);
-    scale: 1.1;
 }
 
 .arrow {
